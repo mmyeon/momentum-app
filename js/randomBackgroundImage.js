@@ -13,7 +13,6 @@
   function getImage() {
     const body = document.body;
     const randomIndex = Math.floor(Math.random() * 6);
-    console.log(randomIndex);
 
     body.style.backgroundImage = `url(${imagesUrl[randomIndex]})`;
   }
