@@ -48,3 +48,28 @@ body {
   font-size: 100px;
   font-weight: 800;
 }
+
+.weather-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.weather-container > .weather-icon {
+  width: 80px;
+}
+
+.weather-container > .text-container {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  display: flex;
+}
+.weather-unit {
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
