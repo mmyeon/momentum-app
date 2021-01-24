@@ -1,8 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: bottom;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.user-content {
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+.user-content > h1 {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+.user-content input {
+  color: white;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 40px;
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  border: none;
+  border-bottom: 5px solid white;
+  border-radius: 2px;
+  height: 50px;
+  outline-style: none;
+  font-weight: 600;
+  background: transparent;
 }

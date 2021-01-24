@@ -5,7 +5,7 @@
 # To Do List
 
 - [ ] Clock.
-- [ ] Username Persistance.
+- [x] Username Persistance.
 - [ ] To Do List.
 - [x] Random Background Image.
 - [ ] Weather with Geolocation.
