@@ -4,7 +4,7 @@
 
 # To Do List
 
-- [ ] Clock.
+- [x] Clock.
 - [x] Username Persistance.
 - [ ] To Do List.
 - [x] Random Background Image.

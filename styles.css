@@ -43,3 +43,8 @@ body {
   font-weight: 600;
   background: transparent;
 }
+
+.clock {
+  font-size: 100px;
+  font-weight: 800;
+}
