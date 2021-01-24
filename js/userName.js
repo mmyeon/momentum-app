@@ -48,7 +48,10 @@
     const today = new Date();
     const hour = today.getHours();
     const minute = today.getMinutes();
-    clock.innerText = `${hour} : ${minute}`;
+
+    const hourStr = `${hour < 10 ? `0${hour}` : hour}`;
+    const minuteStr = `${minute < 10 ? `0${minute}` : minute}`;
+    clock.innerText = `${hourStr} : ${minuteStr}`;
   }
 
   form.addEventListener("submit", handleSubmit);
