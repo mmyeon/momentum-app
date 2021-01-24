@@ -21,8 +21,31 @@
         <input class="user-name" type="text" spellcheck="false" />
       </form>
     </div>
+    <div class="todo-container">
+      <!-- <h1>JUST DO IT</h1> -->
+      <form id="todo-form" action="submit" autocomplete="off">
+        <input
+          id="todo-input"
+          type="text"
+          id="todo"
+          name="todo"
+          placeholder="무엇을 해볼까나"
+        />
+      </form>
+      <div class="todo-list">
+        <div class="pending-list">
+          <h3>Doing</h3>
+          <ul id="pending-ul"></ul>
+        </div>
+        <div class="finised-list">
+          <h3>Done</h3>
+          <ul id="finished-ul"></ul>
+        </div>
+      </div>
+    </div>
     <script src="./js/userName.js" defer></script>
     <script src="./js/weather.js" defer></script>
+    <script src="./js/todo.js" defer></script>
     <script src="./js/randomBackgroundImage.js" defer></script>
   </body>
 </html>

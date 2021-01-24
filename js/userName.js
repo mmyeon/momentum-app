@@ -4,6 +4,7 @@
   const input = document.querySelector(".user-name");
   const userName = localStorage.getItem("name");
   const userContent = document.querySelector(".user-content");
+  const todoContainer = document.querySelector(".todo-container");
 
   checkStorageName();
 
@@ -16,6 +17,7 @@
 
     showClock();
     updateTime();
+    todoContainer.style.display = "block";
   }
 
   function saveToStorage(username) {
@@ -29,6 +31,7 @@
 
       showClock();
       setInterval(updateTime, 1000);
+      todoContainer.style.display = "block";
     }
   }
 
@@ -39,7 +42,9 @@
     const clock = document.createElement("div");
     clock.classList.add("clock");
     userContent.prepend(clock);
-    clock.innerText = `${hour} : ${minute}`;
+    const hourStr = `${hour < 10 ? `0${hour}` : hour}`;
+    const minuteStr = `${minute < 10 ? `0${minute}` : minute}`;
+    clock.innerText = `${hourStr} : ${minuteStr}`;
     title.style.fontSize = "40px";
   }
 

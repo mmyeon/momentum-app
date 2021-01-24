@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline-style: none;
 }
 
 body {
@@ -39,7 +40,7 @@ body {
   border-bottom: 5px solid white;
   border-radius: 2px;
   height: 50px;
-  outline-style: none;
+
   font-weight: 600;
   background: transparent;
 }
@@ -72,4 +73,63 @@ body {
   font-size: 16px;
   margin-left: 5px;
   margin-right: 10px;
+}
+
+.todo-container {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background: rgba(255, 255, 255, 0.515);
+  padding: 50px;
+  border-radius: 10px;
+  margin: 20px;
+  display: none;
+}
+
+.todo-container > h1 {
+  font-weight: 800;
+  font-size: 40px;
+}
+
+#todo-input {
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid black;
+  color: black;
+  height: 20px;
+  width: 90%;
+  text-align: center;
+  font-size: 24px;
+  padding: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+.todo-list {
+  margin: 30px 0px;
+}
+
+.todo-list h3 {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.todo-list li {
+  font-size: 20px;
+  margin: 2px 0;
+  text-align: left;
+  padding-left: 12px;
+  display: flex;
+  align-items: center;
+}
+
+li button {
+  margin-left: 5px;
+}
+
+.pending-list {
+  margin-bottom: 30px;
 }
